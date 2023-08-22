@@ -1,0 +1,40 @@
+prisma:info Starting a sqlite pool with 17 connections.
+prisma:query BEGIN
+prisma:query ROLLBACK
+prisma:error
+Invalid `prisma.model1.deleteMany()` invocation:
+
+{}
+
+Unknown argument `faultyField`. Available options are listed in green.
+prisma:error
+Invalid `prisma.model2.create()` invocation:
+
+{
+  data: {
+    field2: "value",
+    faultyField: "value"
+    ~~~~~~~~~~~
+  }
+}
+
+Unknown argument `faultyField`. Available options are listed in green.
+C:\[REDACTED]\prisma-wrong-method-in-error-in-transaction\node_modules\.pnpm\@prisma+client@5.2.0_prisma@5.2.0\node_modules\@prisma\client\runtime\library.js:116
+[REDACTED]
+
+
+PrismaClientValidationError:
+Invalid `prisma.model1.deleteMany()` invocation:
+
+{}
+
+Unknown argument `faultyField`. Available options are listed in green.
+    at xn (C:\[REDACTED]\prisma-wrong-method-in-error-in-transaction\node_modules\.pnpm\@prisma+client@5.2.0_prisma@5.2.0\node_modules\@prisma\client\runtime\library.js:116:5852)
+    at vn.handleRequestError (C:\[REDACTED]\prisma-wrong-method-in-error-in-transaction\node_modules\.pnpm\@prisma+client@5.2.0_prisma@5.2.0\node_modules\@prisma\client\runtime\library.js:123:6429)
+    at vn.handleAndLogRequestError (C:\[REDACTED]\prisma-wrong-method-in-error-in-transaction\node_modules\.pnpm\@prisma+client@5.2.0_prisma@5.2.0\node_modules\@prisma\client\runtime\library.js:123:6119)
+    at vn.request (C:\[REDACTED]\prisma-wrong-method-in-error-in-transaction\node_modules\.pnpm\@prisma+client@5.2.0_prisma@5.2.0\node_modules\@prisma\client\runtime\library.js:123:5839)
+    at async l (C:\[REDACTED]\prisma-wrong-method-in-error-in-transaction\node_modules\.pnpm\@prisma+client@5.2.0_prisma@5.2.0\node_modules\@prisma\client\runtime\library.js:128:9763) {
+  clientVersion: '5.2.0'
+}
+
+Node.js v18.16.0
