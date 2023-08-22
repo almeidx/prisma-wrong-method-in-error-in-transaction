@@ -8,7 +8,7 @@
 
 ![result](./result.png)
 
-Logs with all the log types enabled are available [here](./log.txt).
+Logs with all the log types enabled are available [here](./logs.txt).
 
 ## Notes
 
