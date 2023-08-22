@@ -13,4 +13,9 @@ await prisma.$transaction([
       faultyField: "value",
     },
   }),
+  prisma.model1.create({
+    data: {
+      field: "value",
+    },
+  }),
 ]);

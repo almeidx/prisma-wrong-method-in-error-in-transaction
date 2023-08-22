@@ -6,8 +6,6 @@
 
 ## Result
 
-(Likely) The most interesting logs:
-
 ![result](./result.png)
 
-The full log is [here](./log.txt).
+Logs with all the log types enabled are available [here](./log.txt).

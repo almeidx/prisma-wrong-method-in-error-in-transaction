@@ -19,6 +19,17 @@ Invalid `prisma.model2.create()` invocation:
 }
 
 Unknown argument `faultyField`. Available options are listed in green.
+prisma:error
+Invalid `prisma.model1.create()` invocation:
+
+{
+  data: {
+    field: "value",
+?   field2?: String
+  }
+}
+
+Unknown argument `faultyField`. Available options are listed in green.
 C:\[REDACTED]\prisma-wrong-method-in-error-in-transaction\node_modules\.pnpm\@prisma+client@5.2.0_prisma@5.2.0\node_modules\@prisma\client\runtime\library.js:116
 [REDACTED]
 
